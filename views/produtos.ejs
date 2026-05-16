@@ -1,0 +1,19 @@
+<%- include ('partials/header.ejs') %>
+   <%- include ('partials/navbar.ejs') %>
+   <h1>produtos</h1>
+    <hr>
+    <h3>Confira nossos produtos</h3>
+
+
+    <% listaMercadorias.forEach(function(item){ %>
+        <p>
+            <a href="/produtos/<%= item %>">
+            <%= item %> 
+            </a>
+        </p>
+    <% }) %>
+
+     <p><a href="/">Voltar para a pagina incial</a></p>
+
+     <%- include ('partials/footer.ejs') %>
+  
